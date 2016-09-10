@@ -1,0 +1,8 @@
+1. This test incorporates the capcity to generate an JUNIT machine readable .xml file that can be used by Jenkins to create a report for test failures or success.
+
+2. There is a .rspec helper file that contains the commands to initiate the generation of the .xml file: --format RspecJunitFormatter
+--out result.xml.
+
+3. This particular set up is for a single test rather than parallel jobs.
+
+4. Typing <rspec webdriver_test_spec.rb> in command line should initiate the test and generate a .xml file in the same directory.
